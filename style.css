@@ -1,0 +1,458 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 70px;
+	line-height: 1.2;
+	letter-spacing: -.1rem;
+  text-shadow: 4px 4px #000;
+}
+
+h2 {
+  font-weight: normal;
+	font-size: 50px;
+	line-height: 1.3;
+	letter-spacing: -.1rem;
+  color: white;
+  text-shadow: 2px 2px #000;
+}
+
+h3 {
+	font-size: 45px;
+	line-height: 1.25;
+	letter-spacing: -.1rem;
+  color:#264653;
+}
+
+
+
+h4 {
+	font-size: 35px;
+	line-height: 1.35;
+	letter-spacing: -.08rem;
+  color: #264653;
+}
+
+body{
+  font-size: 20px;
+	line-height: 1.35;
+	letter-spacing: -.08rem;
+  color: #264653;
+}
+
+/* Links */
+a:link {
+  color: #e76f51;
+}
+
+a:hover {
+  color: #f4a261;
+}
+
+
+
+
+/*-------header------*/
+header{
+  width: 100%;
+  height: 800px;
+  display: block;
+  background-color: #636363;
+  background-position-x: 50%;
+  background-position-y: center;
+  background-image: url("images/header platypus.jpg");
+  background-size: cover;
+}
+#header2{
+  width: 100%;
+  height: 800px;
+  display: block;
+  background-color: #636363;
+  background-position-x: 50%;
+  background-position-y: center;
+  background-image: url("images/header platypus2.jpg");
+  background-size: cover;
+}
+
+.top-header{
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  display: inline-block;
+  margin: 0 auto;
+  background-color: #264653;
+  text-align: center;
+}
+
+.logo-container{
+  height: 100%;
+  margin: 1% 2%;
+  display: block;
+  float: left;
+  color: white;
+}
+
+.button {
+  background-color: #2A9D8F;
+  border: none;
+  color: white;
+  padding: 0.5em 1.5em;
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  cursor: pointer;
+}
+ /* Nav with the Donate button */
+nav {
+  float: right;
+  margin: 1% 2%;
+}
+
+.title {
+  padding-top: 150px;
+  color: white;
+  text-align: center; 
+}
+
+.goal {
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+#donate {
+  color: white;
+}
+#involved{
+  width: 100px;
+  padding: 0.5em 1.5em;
+  margin: 10px auto;
+  color: white;
+}
+
+.button:hover {
+  background-color: #0d796c;
+}
+
+
+
+
+/* --------Sections------- */
+.section {
+  padding-top: 60px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 60px;
+}
+
+.sectionheading {
+  margin-bottom: 5px;
+  display: block;
+  float: left;
+}
+
+.toprow {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+.spacer {
+  height: 50px;
+  width: 100%;
+  color: white;
+}
+
+
+
+/* ----- News Section ----- */
+.news {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "column1" "column2" "column3";
+  grid-area: news;
+  margin: auto;
+}
+
+.seemore {
+  padding-top: 1em;
+  text-align: right;
+  cursor: pointer;
+}
+
+.column1 {
+  grid-area: column1;
+  width: 100%;
+}
+.column2 {
+  grid-area: column2;
+  width: 100%;
+}
+.column3 {
+  grid-area: column3;
+  width: 100%;
+}
+
+.img-container{
+  width: 100%;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+}
+.img-container:hover {
+  width: 110%;
+}
+.date {
+  color: #264653;
+}
+
+
+
+/*----- Subscribe Section -----*/
+.subscribe {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "firstname lastname email subbutton";
+  grid-area: subscribe;
+}
+.firstname { grid-area: firstname; margin: auto;}
+.lastname { grid-area: lastname; margin: auto;}
+.email { grid-area: email; margin: auto;}
+.subbutton { grid-area: subbutton; margin: auto;}
+
+.subform {
+  display: block;
+  width: 100%;
+}
+
+input[type=text], input[type=email] {
+  font-size: 20px;
+  border: none;
+  border-bottom: 2px solid #2A9D8F;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+  border: none;
+  border-bottom: 4px solid #0d796c;
+  outline: none;
+}
+
+
+/* ----- Statistics section ----- */
+.statistics {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "platsaved volunteers donations";
+}
+#stat {
+  background-color: #264653;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+#stat-label{
+  font-size: 35px;
+  color: #f4a261;
+}
+.platsaved { grid-area: platsaved; margin: auto;}
+.volunteers { grid-area: volunteers; margin: auto;}
+.donations { grid-area: donations; margin: auto;}
+
+
+/* ----- Activities section ----- */
+.activities {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "photo-research act-research act-research"
+    "act-environment act-environment photo-environment";
+}
+.activities > body {
+  font-size: 35px;
+}
+.act-research { grid-area: act-research; margin: auto;}
+.act-environment { grid-area: act-environment; margin: auto;}
+.photo-research { grid-area: photo-research; margin: auto;}
+.photo-environment { grid-area: photo-environment; margin: auto;}
+
+
+
+/* ----- Get Involved section ----- */
+.getinvolved {
+  text-align: center;
+  width: 100%;
+  height: 600px;
+  display: block;
+  background-color: #636363;
+  background-position-x: 50%;
+  background-position-y: center;
+  background-image: url("images/waterplat.jpg");
+  background-size: cover;
+}
+.difference {
+  padding-top: 300px;
+  text-align: center;
+  color: white;
+  padding-bottom: 50px;
+}
+
+
+/* ----- Footer/About section ----- */
+footer {
+  padding-bottom: 100px;
+}
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "founder details social-media";
+}
+
+.founder { grid-area: founder; margin: auto;}
+.details { grid-area: details; margin: auto; padding:20px; text-align: center;}
+.social-media { 
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "facebook instagram twitter linkedin"
+    "contact-us contact-us contact-us contact-us";
+  grid-area: social-media;
+}
+.facebook { grid-area: facebook; margin: auto; cursor: pointer;}
+.instagram { grid-area: instagram; margin: auto; cursor: pointer;}
+.twitter { grid-area: twitter; margin: auto; cursor: pointer;}
+.linkedin { grid-area: linkedin; margin: auto; cursor: pointer;}
+.contact-us { grid-area: contact-us; margin: auto; color: white; cursor: pointer;}
+
+
+#contact {
+  width: 100px;
+  padding: 0.5em 1.5em;
+  margin: 10px auto;
+  color: white;
+}
+
+
+/* ----------- Resizing to mobile size ----------- */
+@media only screen and (max-width: 850px) {
+  h1 {
+    font-size: 40px;
+    padding-top: 10px;
+    text-shadow: 2px 2px #000;
+  }
+  h2 {
+    font-size: 25px;
+    text-shadow: 1px 1px #000;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  body {
+    font-size: 15px;
+  }
+  #sub-heading {
+    font-size: 20px;
+  }
+  #pla-logo {
+    height: 30px;
+  }
+  .spacer {
+    height: 20px;
+    width: 100%;
+    color: white;
+  }
+  header {
+    height: 300px;
+  }
+  #header2 {
+    height: 300px;
+  }
+  .top-header {
+    height: 45px;
+  }
+  #involved{
+    padding: 0.5em 0.5em;
+  }
+  .title {
+    padding-top: 40px;
+  }
+  .goal {
+    padding: 0px;
+  }
+  .button {
+    font-size: 15px;
+  }
+  input[type=text], input[type=email], select {
+    font-size: 10px;
+    width: 80%;
+    padding: 6px 10px;
+    margin: 4px 0;
+    display: inline-block;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+  #stat {
+    background-color: #264653;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin: auto;
+  }
+  #stat-label{
+    font-size: 15px;
+  }
+  .getinvolved {
+    height: 300px;
+  }
+  .difference {
+    padding-top: 150px;
+    padding-bottom: 25px;
+  }
+}
