@@ -6,13 +6,17 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Australian Platypus Conservancy</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
 </head>
 
 <header id="header2">
 	<!-- Top header with logo and donate button -->
 	<div class="top-header">
 		<div class="logo-container">
-			<img src="images/plat-logo-w.png" id="pla-logo"alt="APC logo" height="50px">
+			<a href="index.html"><img src="images/plat-logo-w.png" id="pla-logo"alt="APC logo" height="50px"></a>
 		</div>
 
 		<nav>
@@ -25,6 +29,134 @@
 		<h1>Australian Platypus Conservancy</h1>
 	</div>
 </header>
+
+<div class="section">
+  <div class="toprow">
+    <div class="sectionheading">
+      <h3>Donation Form</h3>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+
+  <div class="donate-form">
+    <fieldset>
+      <legend><h3>Amount</h3></legend>
+      <div class="amount">
+        <form>
+          <div class="option">
+            <input type="radio" name="donation-money" value="$25">
+            <label for="$25">$25</label><br>
+          </div>
+          <div class="option">
+            <input type="radio" name="donation-money" value="$50">
+            <label for="$50">$50</label><br>
+          </div>
+          <div class="option">
+            <input type="radio"  name="donation-money" value="$100">
+            <label for="$100">$100</label><br>
+          </div>
+          <div class="option">
+            <input type="radio" name="donation-money" value="$150">
+            <label for="$150">$150</label><br>
+          </div>
+          <div class="option">
+            <input type="radio" name="donation-money" value="$200">
+            <label for="$200">$200</label><br>
+          </div>
+          <div class="option">
+            <input type="radio" name="donation-money" value="$500">
+            <label for="$500">$500</label><br>
+          </div>
+          <div class="option">
+            <input type="radio" name="donation-money" value="other">
+            <label for="other">Other</label>
+          </div>
+        </form> 
+      </div>
+    </fieldset>
+
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+    <fieldset>
+      <legend><h3>Your Details</h3></legend>
+      <div class="details">
+        <form>
+          <div class="firstname">
+            <label class="detailform" for="first-name">First name:</label><br>
+            <input type="text" name="first-name" required="true" class="form-field-input">
+          </div>
+          <br>
+          <div class="lastname">
+            <label class="detailform" for="last-name">Last name:</label><br>
+            <input type="text" name="last-name" required="true" class="form-field-input">
+          </div>
+          <br>
+          <div class="email">
+            <label class="detailform" for="email">Email:</label><br>
+            <input type="email" name="email" required="true" class="form-field-input">
+          </div>
+          <br>
+          <div class="phone">
+            <label class="detailform" for="phone">Phone:</label><br>
+            <input type="number" name="phone" required="true" class="form-field-input">
+          </div>
+        </form> 
+      </div>
+      <div class="spacer"></div>
+    </fieldset>
+
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+    <fieldset>
+      <legend><h3>Billing Address</h3></legend>
+      <div class="billing">
+        <form>
+          <div class="address1">
+            <label class="detailform" for="address1">Address 1:</label><br>
+            <input type="text" name="address1" required="true" class="form-field-input">
+          </div>
+          <br>
+          <div class="address2">
+            <label class="detailform" for="address2">Address 2:</label><br>
+            <input type="text" name="address2" required="true" class="form-field-input">
+          </div>
+          <br>
+          <div class="suburb">
+            <label class="detailform" for="suburb">Suburb:</label><br>
+            <input type="text" name="suburb" required="true" class="form-field-input">
+          </div>
+          <br>
+          <div class="state">
+            <label class="detailform" for="state">State:</label><br>
+            <input type="text" name="state" required="true" class="form-field-input">
+          </div>
+          <br>
+          <div class="postcode">
+            <label class="detailform" for="postcode">Postcode:</label><br>
+            <input type="number" name="postcode" required="true" class="form-field-input">
+          </div>
+          <br>
+          <div class="country">
+            <label class="detailform" for="country">Country:</label><br>
+            <input type="text" name="country" required="true" class="form-field-input">
+          </div>
+          <div class="spacer"></div>
+        </form> 
+      </div>
+    </fieldset>
+
+    <div class="spacer"></div>
+
+    <div class="donate-button">
+      <input type="submit" value="Donate" id="donateb" class="button">
+    </div>
+  </div>
+  <div class="spacer"></div>
+</section>
 
 
 <footer>
@@ -44,7 +176,7 @@
         <h4>Founder</h4>
         <p>Geoff Williams</p>
       </div>
-      <div class="details">
+      <div class="about-details">
         <p>The Australian Platypus Conservancy is a non-profit environmental organisation established in 1994 to conserve the platypus and its freshwater habitats.</p>
         <br>
         <p>PO Box 115, Campbells Creek, VIC 3451 Australia</p>

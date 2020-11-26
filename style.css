@@ -250,7 +250,7 @@ nav {
   width: 100%;
 }
 
-input[type=text], input[type=email] {
+input[type=text], input[type=email], input[type=number] {
   font-size: 20px;
   border: none;
   border-bottom: 2px solid #2A9D8F;
@@ -262,7 +262,7 @@ input[type=text], input[type=email] {
   box-sizing: border-box;
 }
 
-input[type=text]:focus, input[type=email]:focus {
+input[type=text]:focus, input[type=email]:focus, input[type=number]:focus {
   border: none;
   border-bottom: 4px solid #0d796c;
   outline: none;
@@ -346,11 +346,11 @@ footer {
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas:
-    "founder details social-media";
+    "founder about-details social-media";
 }
 
 .founder { grid-area: founder; margin: auto;}
-.details { grid-area: details; margin: auto; padding:20px; text-align: center;}
+.about-details { grid-area: about-details; margin: auto; padding:20px; text-align: center;}
 .social-media { 
   margin: auto;
   display: grid;
@@ -375,6 +375,33 @@ footer {
   margin: 10px auto;
   color: white;
 }
+
+
+/* ----- Donate page ----- */
+.donate-form {
+  text-align: center;
+  margin: auto;
+  font-size: 25px;
+  
+}
+.amount {
+  padding-top: 10px;
+  padding-bottom: 70px;
+}
+
+
+.details, .billing {
+  text-align: left;
+  padding-left: 25vw;
+  padding-right: 25vw;
+  font-size: 20px;
+}
+
+.donate-button {
+  margin: auto;
+  padding: auto;
+}
+
 
 
 /* ----------- Resizing to mobile size ----------- */
@@ -429,7 +456,7 @@ footer {
   .button {
     font-size: 15px;
   }
-  input[type=text], input[type=email], select {
+  input[type=text], input[type=email], input[type=number], select {
     font-size: 10px;
     width: 80%;
     padding: 6px 10px;
@@ -454,5 +481,10 @@ footer {
   .difference {
     padding-top: 150px;
     padding-bottom: 25px;
+  }
+  .details, .billing {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: 15px;
   }
 }
